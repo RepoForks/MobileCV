@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Semih Bozdemir CV</string>
+
+    <string-array name="titles">
+        <item>Contacts</item>
+        <item>Objective</item>
+        <item>Education</item>
+        <item>Volunteerism</item>
+        <item>Skills</item>
+        <item>Languages</item>
+        <item>Interests</item>
+        <item>References</item>
+    </string-array>
+</resources>

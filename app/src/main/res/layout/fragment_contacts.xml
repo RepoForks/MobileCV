@@ -1,0 +1,193 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:droidicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sembozdemir.mycv.ContactsFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cv_profile_image"
+                android:layout_margin="@dimen/card_view_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="@dimen/card_view_radius">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="12dp"
+                        app:border_width="1dp"
+                        app:border_color="@color/app_color" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Semih Bozdemir"
+                        android:layout_margin="@dimen/info_labels_margin"
+                        android:textSize="@dimen/info_name_label"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold"
+                        android:id="@+id/info_name"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Label"
+                        android:layout_margin="@dimen/info_labels_margin"
+                        android:textSize="@dimen/info_label_label"
+                        android:textColor="@color/text_color"
+                        android:id="@+id/info_label"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cv_social_icons"
+                android:layout_margin="@dimen/card_view_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="@dimen/card_view_radius">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <LinearLayout
+                            android:id="@+id/listSocialIcons"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <!-- Social Icons will be added here programmaticly -->
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cv_contacts_info"
+                android:layout_margin="@dimen/card_view_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="@dimen/card_view_radius">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <IconTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="{fa-phone} "
+                            android:layout_margin="@dimen/info_labels_margin"
+                            android:textSize="@dimen/info_phone_label"
+                            android:textColor="@color/app_color" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0506 318 74 19"
+                            android:layout_margin="@dimen/info_labels_margin"
+                            android:textSize="@dimen/info_phone_label"
+                            android:textColor="@color/app_color"
+                            android:id="@+id/info_phone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <IconTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="{fa-globe} "
+                            android:layout_margin="@dimen/info_labels_margin"
+                            android:textSize="@dimen/info_phone_label"
+                            android:textColor="@color/app_color" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sembozdemir.com"
+                            android:layout_margin="@dimen/info_labels_margin"
+                            android:textSize="@dimen/info_website_label"
+                            android:textColor="@color/app_color"
+                            android:id="@+id/info_website" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <IconTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="{fa-envelope} "
+                            android:layout_margin="@dimen/info_labels_margin"
+                            android:textSize="@dimen/info_phone_label"
+                            android:textColor="@color/app_color" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sembozdemir@gmail.com"
+                            android:layout_margin="@dimen/info_labels_margin"
+                            android:textSize="@dimen/info_email_label"
+                            android:textColor="@color/app_color"
+                            android:id="@+id/info_email" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

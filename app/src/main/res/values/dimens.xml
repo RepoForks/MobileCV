@@ -1,0 +1,35 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="social_icons_size">40dp</dimen>
+    <dimen name="social_icon_margin">4dp</dimen>
+    <dimen name="card_view_margin">8dp</dimen>
+    <dimen name="card_view_radius">6dp</dimen>
+    <dimen name="info_name_label">45sp</dimen>
+    <dimen name="info_labels_margin">6dp</dimen>
+    <dimen name="info_website_label">23sp</dimen>
+    <dimen name="info_phone_label">23sp</dimen>
+    <dimen name="margin_layout_in_card">20dp</dimen>
+    <dimen name="objective_text_size">23sp</dimen>
+    <dimen name="education_study_type_text_size">20sp</dimen>
+    <dimen name="education_institution_text_size">40sp</dimen>
+    <dimen name="education_gpa_text_size">15sp</dimen>
+    <dimen name="education_area_text_size">30sp</dimen>
+    <dimen name="volunteer_organization_text_size">40sp</dimen>
+    <dimen name="volunteer_position_text_size">30sp</dimen>
+    <dimen name="volunteer_website_type_text_size">25sp</dimen>
+    <dimen name="volunteer_summary_text_size">20sp</dimen>
+    <dimen name="language_text_size">35sp</dimen>
+    <dimen name="fluency_text_size">20sp</dimen>
+    <dimen name="skill_text_size">35sp</dimen>
+    <dimen name="skill_keywords_text_size">20sp</dimen>
+    <dimen name="interest_text_size">35sp</dimen>
+    <dimen name="reference_name_text_size">30sp</dimen>
+    <dimen name="reference_info_text_size">20sp</dimen>
+    <dimen name="education_dates_text_size">23sp</dimen>
+    <dimen name="info_label_label">25sp</dimen>
+    <dimen name="info_email_label">23sp</dimen>
+
+
+</resources>
